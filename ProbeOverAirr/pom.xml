@@ -10,4 +10,40 @@
   	<module>../ProbeOverAirWeb</module>
   	<module>../ProbeOverAir</module>
   </modules>
+  <build>
+  	<plugins>
+  	 <!-- <plugin>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>2.10</version>
+        <configuration>
+          <earSourceDirectory>EarContent</earSourceDirectory>
+          <version>6</version>
+          <defaultLibBundleDir>lib</defaultLibBundleDir>
+        </configuration>
+      </plugin> -->
+       <plugin>
+  <groupId>org.jboss.as.plugins</groupId>
+  <artifactId>jboss-as-maven-plugin</artifactId>
+  <version>7.3.Final</version>
+   <!--<executions>
+    <execution>
+      <phase>install</phase>
+      <goals>
+        <goal>redeploy</goal>
+      </goals>
+    </execution>
+  </executions> -->
+  <configuration>
+    <!-- <force>true</force>
+    <hostname>${hostname}</hostname>
+    <port>${port}</port>
+    <username>${username}</username>
+    <password>${password}</password>
+    <filename>${filename}</filename> -->
+    <skip>true</skip>
+  </configuration>
+</plugin>
+      
+  	</plugins>
+  </build>
 </project>
