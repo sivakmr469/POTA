@@ -4,6 +4,7 @@
     <groupId>ProbeOverAir</groupId>
   <artifactId>ProbeOverAirr</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <relativePath>../ProbeOverAirr/pom.xml</relativePath>
   </parent>
   <groupId>ProbeOverAir</groupId>
   <artifactId>ProbeOverAirEJB</artifactId>
